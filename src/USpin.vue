@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import Icon from './Icon.vue'
 const props = defineProps<{
   bgColor?: string
@@ -14,7 +13,13 @@ const logoColor = props.logoColor || '#294973'
 </script>
 
 <template>
-  <div class="u-spin-core" :style="'background-color:' + bgColor">
+  <div
+    class="u-spin-core"
+    :style="
+      'background-color:' + bgColor + ';' +
+        'font-size:' + size + ';'
+    "
+  >
     <Icon :color="logoColor" />
   </div>
 </template>

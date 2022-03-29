@@ -3,13 +3,13 @@ import USpin from './USpin.vue'
 
 interface propType {
   size: string
-  color: string
+  logoColor: string
   bgColor: string
 }
 
-const map = new Map<Element, Element>()
+const map = new Map<HTMLElement, HTMLElement>()
 
-export function show(target: Element, {
+export function show(target: HTMLElement, {
   size,
   logoColor,
   bgColor,
@@ -31,7 +31,7 @@ export function show(target: Element, {
   map.set(target, container)
 }
 
-export function hidden(target: Element) {
+export function hidden(target: HTMLElement) {
   const container = map.get(target)
   target.removeChild(container)
   map.has(target) && map.delete(target)

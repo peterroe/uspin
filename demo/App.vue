@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { hidden, show } from '../src/main'
 
-const targetRef = ref<Element>(null)
+const targetRef = ref<HTMLElement | undefined>(undefined)
 
 onMounted(() => {
   show(targetRef.value)
