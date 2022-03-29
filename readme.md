@@ -15,7 +15,7 @@ $ npm install uspin
 import { onMounted, ref } from 'vue'
 import { hidden, show } from 'uspin'
 
-const targetRef = ref<Element>(null)
+const targetRef = ref(null)
 </script>
 
 <template>

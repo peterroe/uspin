@@ -17,7 +17,7 @@
     ".": {
       "require": "./dist/main.umd.js",
       "import": "./dist/main.es.js",
-      "type": "./dist/main.d.ts"
+      "types": "./dist/main.d.ts"
     }
   },
   "keywords": [
