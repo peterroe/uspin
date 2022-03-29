@@ -32,7 +32,7 @@ const targetRef = ref<Element>(null)
 ## Config
 
 ```ts
-interface SpinConfig {
+export interface SpinConfig {
   logoColor?: string // default: '#294973'
   size?: string // default: '5em'
   bgColor?: string // default: 'gray'
@@ -41,6 +41,10 @@ interface SpinConfig {
 export declare function show(
   targetRef: Ref<Element>,
   config?: SpinConfig
+): void
+
+export declare function hidden(
+  targetRef: Ref<Element>
 ): void
 ```
 
