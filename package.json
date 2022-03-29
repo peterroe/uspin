@@ -15,8 +15,9 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/[name].umd.js",
-      "import": "./dist/[name].es.js"
+      "require": "./dist/main.umd.js",
+      "import": "./dist/main.es.js",
+      "type": "./dist/main.d.ts"
     }
   },
   "keywords": [
@@ -47,6 +48,6 @@
     "vite-plugin-dts": "^1.0.4",
     "vitest": "0.7.6",
     "vue": "3.2.31",
-    "vue-tsc": "0.33.3"
+    "vue-tsc": "0.33.9"
   }
 }
