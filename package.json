@@ -1,0 +1,51 @@
+{
+  "name": "uspin",
+  "packageManager": "pnpm@6.32.3",
+  "version": "1.0.0",
+  "description": "component based on vue3.x",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"**/*.{vue,ts,js}\"",
+    "release": "np",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/[name].umd.js",
+      "import": "./dist/[name].es.js"
+    }
+  },
+  "keywords": [
+    "vue3",
+    "component",
+    "vite"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "pnpm lint && pnpm test"
+    }
+  },
+  "author": "peterroe",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "0.18.9",
+    "@vitejs/plugin-vue": "2.2.4",
+    "@vue/test-utils": "2.0.0-rc.17",
+    "eslint": "8.11.0",
+    "happy-dom": "2.49.0",
+    "husky": "4.3.8",
+    "np": "7.6.1",
+    "prettier": "2.6.0",
+    "pretty-quick": "3.1.3",
+    "typescript": "4.6.2",
+    "vite": "2.8.6",
+    "vitest": "0.7.6",
+    "vue": "3.2.31",
+    "vue-tsc": "0.33.3"
+  }
+}
