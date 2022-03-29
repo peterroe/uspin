@@ -2,20 +2,20 @@
 import { ref } from 'vue'
 import Icon from './Icon.vue'
 const props = defineProps<{
-  bg?: string
+  bgColor?: string
   size?: string
-  color?: string
+  logoColor?: string
 }>()
 
-const bg = props.bg || 'gray'
+const bgColor = props.bgColor || 'gray'
 const size = props.size || '5em'
-const color = props.color || '#294973'
+const logoColor = props.logoColor || '#294973'
 
 </script>
 
 <template>
-  <div class="u-spin-core" :style="'background-color:' + bg">
-    <Icon :color="color" />
+  <div class="u-spin-core" :style="'background-color:' + bgColor">
+    <Icon :color="logoColor" />
   </div>
 </template>
 

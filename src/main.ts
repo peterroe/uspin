@@ -1,18 +1,28 @@
 import { h, render } from 'vue'
 import USpin from './USpin.vue'
 
+interface propType {
+  size: string
+  color: string
+  bgColor: string
+}
+
 const map = new Map<Element, Element>()
 
-export function show(target: Element) {
+export function show(target: Element, {
+  size,
+  logoColor,
+  bgColor,
+} = {} as propType) {
   // return if already exist
   if (map.has(target)) return
   // father box keep relative
   target.style.position = 'relative'
-  const { offsetHeight, offsetWidth } = target
 
   const element = h(USpin, {
-    offsetHeight,
-    offsetWidth,
+    size,
+    logoColor,
+    bgColor,
   })
   const container = document.createElement('div')
 

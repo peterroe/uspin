@@ -29,6 +29,18 @@ const targetRef = ref<Element>(null)
 </template>
 ```
 
+## Config
+
+```ts
+interface SpinConfig {
+  logoColor?: string // default: '#294973'
+  size?: string // default: '5em'
+  bgColor?: string // default: 'gray'
+}
+
+function show(targetRef: Ref<Element>, config?: SpinConfig)
+```
+
 ## Preview
 
 ![img](https://img-blog.csdnimg.cn/26076d097a1849dab693afed311faf33.gif)
