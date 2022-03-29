@@ -38,9 +38,12 @@ interface SpinConfig {
   bgColor?: string // default: 'gray'
 }
 
-function show(targetRef: Ref<Element>, config?: SpinConfig)
+export declare function show(
+  targetRef: Ref<Element>,
+  config?: SpinConfig
+): void
 ```
 
 ## Preview
 
-![img](https://img-blog.csdnimg.cn/26076d097a1849dab693afed311faf33.gif)
+![img](https://img-blog.csdnimg.cn/db951889fe19472db1a48fa22ab64d18.gif)
