@@ -1,14 +1,11 @@
-import type { App } from 'vue'
 import { h, render } from 'vue'
 import USpin from './USpin.vue'
 
-export function install(app: App) {
-  app.component('USpin', USpin)
-}
-
-let onlyContainer = null
+const map = new Map<Element, Element>()
 
 export function show(target: Element) {
+  // return if already exist
+  if (map.has(target)) return
   // father box keep relative
   target.style.position = 'relative'
   const { offsetHeight, offsetWidth } = target
@@ -17,12 +14,15 @@ export function show(target: Element) {
     offsetHeight,
     offsetWidth,
   })
-  onlyContainer = document.createElement('div')
+  const container = document.createElement('div')
 
-  render(element, onlyContainer)
-  target.appendChild(onlyContainer)
+  render(element, container)
+  target.appendChild(container)
+  map.set(target, container)
 }
 
 export function hidden(target: Element) {
-  target.removeChild(onlyContainer)
+  const container = map.get(target)
+  target.removeChild(container)
+  map.has(target) && map.delete(target)
 }
