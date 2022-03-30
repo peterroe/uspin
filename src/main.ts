@@ -12,7 +12,7 @@ const map = new Map<HTMLElement, HTMLElement>()
 
 export function show(
   target: HTMLElement,
-  { size, logoColor, bgColor, opacity } = {} as propType
+  { size, logoColor, bgColor, opacity } = {} as propType,
 ) {
   // return if already exist
   if (map.has(target)) return
