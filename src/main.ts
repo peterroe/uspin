@@ -32,7 +32,7 @@ export function show(
   map.set(target, container)
 }
 
-export function hidden(target: HTMLElement) {
+export function hide(target: HTMLElement) {
   const container = map.get(target)
   target.removeChild(container)
   map.has(target) && map.delete(target)

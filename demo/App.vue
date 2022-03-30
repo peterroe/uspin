@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import { hidden, show } from '../src/main'
+import { hide, show } from '../src/main'
 
 const targetRef = ref<HTMLElement | undefined>(undefined)
 
@@ -9,18 +9,15 @@ onMounted(() => {
 })
 
 setTimeout(() => {
-  hidden(targetRef.value)
+  hide(targetRef.value)
 }, 3000)
-
 </script>
 
 <template>
-  <div ref="targetRef" class="demo">
-    hello
-  </div>
+  <div ref="targetRef" class="demo">hello</div>
   <div class="demoButton">
     <button @click="show(targetRef)">show</button>
-    <button @click="hidden(targetRef)">hidden</button>
+    <button @click="hide(targetRef)">hide</button>
   </div>
 </template>
 
@@ -28,7 +25,7 @@ setTimeout(() => {
 .demo {
   text-align: center;
   height: 200px;
-  background-color: skyblue
+  background-color: skyblue;
 }
 .demoButton {
   margin: 20px 0;

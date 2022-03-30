@@ -13,7 +13,7 @@ $ npm install uspin
 ```html
 <script setup lang="ts">
   import { onMounted, ref } from 'vue'
-  import { hidden, show } from 'uspin'
+  import { hide, show } from 'uspin'
 
   const targetRef = ref(null)
 </script>
@@ -22,7 +22,7 @@ $ npm install uspin
   <div ref="targetRef" class="demo">hello</div>
   <div class="demoButton">
     <button @click="show(targetRef)">show</button>
-    <button @click="hidden(targetRef)">hidden</button>
+    <button @click="hide(targetRef)">hide</button>
   </div>
 </template>
 ```
@@ -39,7 +39,7 @@ export interface SpinConfig {
 
 export declare function show(targetRef: Ref<Element>, config?: SpinConfig): void
 
-export declare function hidden(targetRef: Ref<Element>): void
+export declare function hide(targetRef: Ref<Element>): void
 ```
 
 ## Preview
