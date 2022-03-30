@@ -27,8 +27,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "pnpm test"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "author": "peterroe",
