@@ -23,6 +23,7 @@ export function show(
     size,
     logoColor,
     bgColor,
+    opacity,
   })
   const container = document.createElement('div')
 
