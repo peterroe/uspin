@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Icon from './Icon.vue'
 import { ref } from 'vue'
+import Icon from './Icon.vue'
 const props = defineProps<{
   bgColor?: string
   size?: string
@@ -25,7 +25,7 @@ const style = ref({
   left: '50%',
   transform: 'translate(-50%, -50%)',
   backgroundColor: bgColor,
-  opacity: opacity,
+  opacity,
   fontSize: size,
 })
 </script>
