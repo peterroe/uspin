@@ -5,15 +5,15 @@ interface propType {
   size: string
   logoColor: string
   bgColor: string
+  opacity: number
 }
 
 const map = new Map<HTMLElement, HTMLElement>()
 
-export function show(target: HTMLElement, {
-  size,
-  logoColor,
-  bgColor,
-} = {} as propType) {
+export function show(
+  target: HTMLElement,
+  { size, logoColor, bgColor, opacity } = {} as propType
+) {
   // return if already exist
   if (map.has(target)) return
   // father box keep relative

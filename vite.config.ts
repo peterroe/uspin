@@ -13,8 +13,9 @@ export default defineConfig({
       entry: './src/main.ts',
       formats: ['es', 'umd'],
       name: pkg.name,
-      fileName: format => `main.${format}.js`,
+      fileName: (format) => `main.${format}.js`,
     },
+    cssCodeSplit: true,
     rollupOptions: {
       external: ['vue'],
       output: {

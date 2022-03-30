@@ -12,16 +12,14 @@ $ npm install uspin
 
 ```html
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { hidden, show } from 'uspin'
+  import { onMounted, ref } from 'vue'
+  import { hidden, show } from 'uspin'
 
-const targetRef = ref(null)
+  const targetRef = ref(null)
 </script>
 
 <template>
-  <div ref="targetRef" class="demo">
-    hello
-  </div>
+  <div ref="targetRef" class="demo">hello</div>
   <div class="demoButton">
     <button @click="show(targetRef)">show</button>
     <button @click="hidden(targetRef)">hidden</button>
@@ -33,19 +31,15 @@ const targetRef = ref(null)
 
 ```ts
 export interface SpinConfig {
-  logoColor?: string // default: '#294973'
+  logoColor?: string // default: '#fff'
   size?: string // default: '5em'
-  bgColor?: string // default: 'gray'
+  bgColor?: string // default: '#ddd'
+  opacity?: number // default: 0.5
 }
 
-export declare function show(
-  targetRef: Ref<Element>,
-  config?: SpinConfig
-): void
+export declare function show(targetRef: Ref<Element>, config?: SpinConfig): void
 
-export declare function hidden(
-  targetRef: Ref<Element>
-): void
+export declare function hidden(targetRef: Ref<Element>): void
 ```
 
 ## Preview
