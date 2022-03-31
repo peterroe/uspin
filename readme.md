@@ -44,4 +44,4 @@ export declare function hide(targetRef: Ref<Element>): void
 
 ## Preview
 
-![img](https://img-blog.csdnimg.cn/db951889fe19472db1a48fa22ab64d18.gif)
+![img](https://img-blog.csdnimg.cn/9fa98b82a0f445a39d869fce28cd65cc.gif)

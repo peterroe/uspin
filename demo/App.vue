@@ -14,7 +14,13 @@ setTimeout(() => {
 </script>
 
 <template>
-  <div ref="targetRef" class="demo">hello</div>
+  <div ref="targetRef" class="demo">
+    <p>💻 A front end developer.</p>
+    <p>🥉 Working Rss-Reader based on tauri-app.</p>
+    <p>🦄 Enjoy JavaScript,VueJs and NodeJs.</p>
+    <p>🍉 Hobby maybe blogging and write open source tools.</p>
+    <p>💨 Visit peterroe.icu for more information.</p>
+  </div>
   <div class="demoButton">
     <button @click="show(targetRef)">show</button>
     <button @click="hide(targetRef)">hide</button>
@@ -22,8 +28,12 @@ setTimeout(() => {
 </template>
 
 <style>
+body {
+  padding: 50px;
+}
 .demo {
   text-align: center;
+  padding: 20px;
   height: 200px;
   background-color: skyblue;
 }
