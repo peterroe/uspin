@@ -1,16 +1,8 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import { hide, show } from '../src/main'
 
 const targetRef = ref<HTMLElement | undefined>(undefined)
-
-onMounted(() => {
-  show(targetRef.value)
-})
-
-setTimeout(() => {
-  hide(targetRef.value)
-}, 3000)
 </script>
 
 <template>
