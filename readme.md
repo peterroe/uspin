@@ -12,14 +12,20 @@ $ npm install uspin
 
 ```html
 <script setup lang="ts">
-  import { onMounted, ref } from 'vue'
-  import { hide, show } from 'uspin'
+  import { ref } from 'vue'
+  import { hide, show } from '../src/main'
 
-  const targetRef = ref(null)
+  const targetRef = ref<HTMLElement | undefined>(undefined)
 </script>
 
 <template>
-  <div ref="targetRef" class="demo">hello</div>
+  <div ref="targetRef" class="demo">
+    <p>💻 A front end developer.</p>
+    <p>🥉 Working Rss-Reader based on tauri-app.</p>
+    <p>🦄 Enjoy JavaScript,VueJs and NodeJs.</p>
+    <p>🍉 Hobby maybe blogging and write open source tools.</p>
+    <p>💨 Visit peterroe.icu for more information.</p>
+  </div>
   <div class="demoButton">
     <button @click="show(targetRef)">show</button>
     <button @click="hide(targetRef)">hide</button>
