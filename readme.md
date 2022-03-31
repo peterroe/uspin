@@ -13,7 +13,7 @@ $ npm install uspin
 ```html
 <script setup lang="ts">
   import { ref } from 'vue'
-  import { hide, show } from '../src/main'
+  import { hide, show } from 'uspin' // import uspin
 
   const targetRef = ref<HTMLElement | undefined>(undefined)
 </script>
@@ -27,6 +27,7 @@ $ npm install uspin
     <p>💨 Visit peterroe.icu for more information.</p>
   </div>
   <div class="demoButton">
+    <!-- invoke method -->
     <button @click="show(targetRef)">show</button>
     <button @click="hide(targetRef)">hide</button>
   </div>
