@@ -11,7 +11,7 @@ specifiers:
   prettier: 2.6.0
   pretty-quick: 3.1.3
   typescript: 4.6.2
-  vite: 2.8.6
+  vite: 2.9.5
   vite-plugin-dts: ^1.0.4
   vitest: 0.7.6
   vue: 3.2.31
@@ -19,7 +19,7 @@ specifiers:
 
 devDependencies:
   '@antfu/eslint-config': 0.18.9_eslint@8.11.0+typescript@4.6.2
-  '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
+  '@vitejs/plugin-vue': 2.2.4_vite@2.9.5+vue@3.2.31
   '@vue/test-utils': 2.0.0-rc.17_vue@3.2.31
   eslint: 8.11.0
   happy-dom: 2.49.0
@@ -28,8 +28,8 @@ devDependencies:
   prettier: 2.6.0
   pretty-quick: 3.1.3_prettier@2.6.0
   typescript: 4.6.2
-  vite: 2.8.6
-  vite-plugin-dts: 1.0.4_vite@2.8.6
+  vite: 2.9.5
+  vite-plugin-dts: 1.0.4_vite@2.9.5
   vitest: 0.7.6_happy-dom@2.49.0
   vue: 3.2.31
   vue-tsc: 0.33.9_typescript@4.6.2
@@ -483,14 +483,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/2.2.4_vite@2.8.6+vue@3.2.31:
+  /@vitejs/plugin-vue/2.2.4_vite@2.9.5+vue@3.2.31:
     resolution: {integrity: sha512-ev9AOlp0ljCaDkFZF3JwC/pD2N4Hh+r5srl5JHM6BKg5+99jiiK0rE/XaRs3pVm1wzyKkjUy/StBSoXX5fFzcw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.8.6
+      vite: 2.9.5
       vue: 3.2.31
     dev: true
 
@@ -4706,7 +4706,7 @@ packages:
       builtins: 1.0.3
     dev: true
 
-  /vite-plugin-dts/1.0.4_vite@2.8.6:
+  /vite-plugin-dts/1.0.4_vite@2.9.5:
     resolution: {integrity: sha512-RANcFpButKOiYIwiC33DmmMRa75tDzaov8FHRM643ZyLTIVGENo3mG92plevQIX2eaiYA4kA+OgQm8d59TmIBQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4717,13 +4717,13 @@ packages:
       fast-glob: 3.2.11
       fs-extra: 10.0.1
       ts-morph: 14.0.0
-      vite: 2.8.6
+      vite: 2.9.5
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.8.6:
-    resolution: {integrity: sha512-e4H0QpludOVKkmOsRyqQ7LTcMUDF3mcgyNU4lmi0B5JUbe0ZxeBBl8VoZ8Y6Rfn9eFKYtdXNPcYK97ZwH+K2ug==}
+  /vite/2.9.5:
+    resolution: {integrity: sha512-dvMN64X2YEQgSXF1lYabKXw3BbN6e+BL67+P3Vy4MacnY+UzT1AfkHiioFSi9+uiDUiaDy7Ax/LQqivk6orilg==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -4772,7 +4772,7 @@ packages:
       local-pkg: 0.4.1
       tinypool: 0.1.2
       tinyspy: 0.3.0
-      vite: 2.8.6
+      vite: 2.9.5
     transitivePeerDependencies:
       - less
       - sass
